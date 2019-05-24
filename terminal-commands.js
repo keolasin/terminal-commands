@@ -14,12 +14,12 @@ module.exports.touch = (fileName, content) => {
   fs.writefile( '${fileName}', '${content}', error => {
     if(error) throw error;
     console.log(`File ${fileName} saved`);
-  };
+  }
 )};
 
 module.exports.mkdir = (path) => {
   fs.mkdir('${path}', (error) => {
     if (error) throw error;
     console.log(`Folder made with path of ${path}`);
-  };
+  }
 )};
