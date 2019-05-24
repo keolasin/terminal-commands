@@ -11,7 +11,7 @@ module.exports.ls = () => {
 };
 
 module.exports.touch = (fileName, content) => {
-  fs.writefile( '${fileName}', '${content}', error => {
+  fs.writeFile( '${fileName}', '${content}', error => {
     if(error) throw error;
     console.log(`File ${fileName} saved`);
   }
